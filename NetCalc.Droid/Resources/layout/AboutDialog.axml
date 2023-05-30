@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="300dip"
+              android:layout_height="wrap_content">
+  <LinearLayout
+    android:layout_marginLeft="17dp"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/linearLayout1">
+    <TextView
+      android:text="Author: "
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:id="@+id/textView1"
+       />
+    <TextView
+      android:text="Robledo Pazotto"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:id="@+id/NetworkIdTextView"
+       />
+  </LinearLayout>
+  <LinearLayout
+    android:layout_marginLeft="17dp"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/linearLayout2">
+    <TextView
+      android:text="Version: "
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:id="@+id/textView2" />
+    <TextView
+      android:text="2.0"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:id="@+id/BroadcastTextView"/>
+  </LinearLayout>
+  <LinearLayout
+    android:layout_marginLeft="17dp"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/linearLayout3">
+    <TextView
+      android:text="Feedback: "
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:id="@+id/textView3" />
+    <TextView
+      android:text="feedback@pazotto.com"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:id="@+id/SubnetMaskTextView" />
+  </LinearLayout>
+  <Button
+    android:text=" Ok "
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/AboutOkButton"
+    android:layout_gravity="center"
+    android:layout_marginTop="10dp"/>
+</LinearLayout>

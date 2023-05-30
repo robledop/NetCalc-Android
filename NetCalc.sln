@@ -1,0 +1,46 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+VisualStudioVersion = 12.0.30501.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetCalc.Core", "NetCalc.Core\NetCalc.Core.csproj", "{10F3C856-8CDE-4A3B-B5D9-E29D00202D61}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetCalc.Droid", "NetCalc.Droid\NetCalc.Droid.csproj", "{236C1C54-768B-4259-AF17-DA42AB87162B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{10F3C856-8CDE-4A3B-B5D9-E29D00202D61}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{10F3C856-8CDE-4A3B-B5D9-E29D00202D61}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{10F3C856-8CDE-4A3B-B5D9-E29D00202D61}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{10F3C856-8CDE-4A3B-B5D9-E29D00202D61}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{10F3C856-8CDE-4A3B-B5D9-E29D00202D61}.Release|Any CPU.Build.0 = Release|Any CPU
+		{236C1C54-768B-4259-AF17-DA42AB87162B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{236C1C54-768B-4259-AF17-DA42AB87162B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{236C1C54-768B-4259-AF17-DA42AB87162B}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{236C1C54-768B-4259-AF17-DA42AB87162B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{236C1C54-768B-4259-AF17-DA42AB87162B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{236C1C54-768B-4259-AF17-DA42AB87162B}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = NetCalc.Droid\NetCalc.Droid.csproj
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 3
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://pazotto.visualstudio.com/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = NetCalc.Core\\NetCalc.Core.csproj
+		SccProjectName1 = NetCalc.Core
+		SccLocalPath1 = NetCalc.Core
+		SccProjectUniqueName2 = NetCalc.Droid\\NetCalc.Droid.csproj
+		SccProjectName2 = NetCalc.Droid
+		SccLocalPath2 = NetCalc.Droid
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

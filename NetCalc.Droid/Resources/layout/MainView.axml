@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <LinearLayout
+        android:id="@+id/controls"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:minWidth="153dp"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:text="Address block"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/textView1"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="2dip" />
+                <EditText
+                    android:id="@+id/ipEditText"
+                    android:text="10.0.0.0"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    local:MvxBind="Text AddressBlock"
+                    android:digits="0123456789."
+                    android:maxLength="15"
+                    android:numeric="decimal"
+                    android:inputType="numberDecimal" />
+            </LinearLayout>
+            <LinearLayout
+                android:minWidth="80dp"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:text="Mask"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/textView2"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="2dip" />
+                <Mvx.MvxSpinner
+                    android:id="@+id/SubnetMaskDropDown"
+                    local:MvxBind="ItemsSource MasksList; SelectedItem SelectedMask"
+                    android:dropDownWidth="400dp"
+                    local:MvxItemTemplate="@layout/subnetmaskitem_spinner"
+                    local:MvxDropDownItemTemplate="@layout/subnetmaskitem_spinnerdropdown"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:text="Subnets"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/textView3"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="2dip" />
+                <Mvx.MvxSpinner
+                    android:id="@+id/HostsAndSubnetsSpinner"
+                    local:MvxBind="ItemsSource HostsAndSubnets; SelectedItem SelectedHostsAndSubnets"
+                    android:dropDownWidth="400dp"
+                    local:MvxItemTemplate="@layout/hostsandsubnetsitem_spinner"
+                    local:MvxDropDownItemTemplate="@layout/hostsandsubnetsitem_spinnerdropdown"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <MvxListView
+        android:layout_below="@+id/controls"
+        android:layout_above="@+id/ad"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/SubnetListView"
+        android:clickable="true"
+        local:MvxBind="ItemsSource Subnets; SelectedItem SelectedIpSegment"
+        local:MvxItemTemplate="@layout/subnetitem" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ad"
+        android:layout_alignParentBottom="true" />
+</RelativeLayout>

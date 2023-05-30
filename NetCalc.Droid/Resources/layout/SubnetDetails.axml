@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="300dip"
+              android:layout_height="wrap_content">
+  <LinearLayout
+    android:layout_marginLeft="17dp"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/linearLayout1">
+    <TextView
+      android:text="Network id:"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:id="@+id/textView1"
+      android:layout_weight="1" />
+    <TextView
+      android:text="Text"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:id="@+id/NetworkIdTextView"
+      android:layout_weight="1" />
+  </LinearLayout>
+  <LinearLayout
+    android:layout_marginLeft="17dp"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/linearLayout2">
+    <TextView
+      android:text="Broadcast:"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:id="@+id/textView2"
+      android:layout_weight="1" />
+    <TextView
+      android:text="Text"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:id="@+id/BroadcastTextView"
+      android:layout_weight="1" />
+  </LinearLayout>
+  <LinearLayout
+    android:layout_marginLeft="17dp"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/linearLayout3">
+    <TextView
+      android:text="Subnet mask:"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:id="@+id/textView3"
+      android:layout_weight="1" />
+    <TextView
+      android:text="Text"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:id="@+id/SubnetMaskTextView"
+      android:layout_weight="1"
+      android:layout_gravity="left" />
+  </LinearLayout>
+  <LinearLayout
+    android:layout_marginLeft="17dp"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/linearLayout3">
+    <TextView
+      android:text="Wildcard subnet mask:"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:id="@+id/textView3"
+      android:layout_weight="1"
+      android:lines="1"
+      android:maxLines="1"
+      android:singleLine="true" />
+    <TextView
+      android:text="Text"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:id="@+id/WildcardMaskTextView"
+      android:layout_weight="1" />
+  </LinearLayout>
+  <LinearLayout
+    android:layout_marginLeft="17dp"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/linearLayout3">
+    <TextView
+      android:text="CIDR:"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:id="@+id/textView3"
+      android:layout_weight="1" />
+    <TextView
+      android:text="Text"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:id="@+id/CIDRTextView"
+      android:layout_weight="1" />
+  </LinearLayout>
+  <LinearLayout
+    android:layout_marginLeft="17dp"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/linearLayout3">
+    <TextView
+      android:text="First usable address:"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:id="@+id/textView3"
+      android:layout_weight="1" />
+    <TextView
+      android:text="Text"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:id="@+id/FirstUsableTextView"
+      android:layout_weight="1" />
+  </LinearLayout>
+  <LinearLayout
+    android:layout_marginLeft="17dp"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/linearLayout3">
+    <TextView
+      android:text="Last usable address:"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:id="@+id/textView3"
+      android:layout_weight="1" />
+    <TextView
+      android:text="Text"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:id="@+id/LastUsableTextView"
+      android:layout_weight="1" />
+  </LinearLayout>
+  <LinearLayout
+    android:layout_marginLeft="17dp"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/linearLayout3">
+    <TextView
+      android:text="Number of hosts:"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:id="@+id/textView3"
+      android:layout_weight="1" />
+    <TextView
+      android:text="Text"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:id="@+id/NumberOfHostsTextView"
+      android:layout_weight="1" />
+  </LinearLayout>
+  <LinearLayout
+    android:layout_marginLeft="17dp"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/linearLayout3">
+    <TextView
+      android:text="RFC 3021 compliant:"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:id="@+id/textView3"
+      android:layout_weight="1" />
+    <TextView
+      android:text="Text"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:id="@+id/RFC3021TextView"
+      android:layout_weight="1" />
+  </LinearLayout>
+  <Button
+    android:text=" Ok "
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/OkButton"
+    android:layout_gravity="center"
+    android:layout_marginTop="10dp" />
+</LinearLayout>
